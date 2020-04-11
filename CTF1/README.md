@@ -1,5 +1,4 @@
 
-CTF Writeup
 
 CTF url is given, Let's see what is there\...
 
