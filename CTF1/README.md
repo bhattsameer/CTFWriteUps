@@ -8,7 +8,7 @@ The name of the challange was **GEO**, One URL was provided and we need to find 
 
 ![](./media/1.png)
 
-While Intercepting the request in burp and observing the request, I found XML data passing inside one parameter. Also observed the it is **geoserver** so I searched for some geoserver related vulnerabilities on google and github and found one exploit.
+While Intercepting the request in burp and observing the request, I found XML data passing inside one parameter. Also observed that it is **geoserver** so I searched for some geoserver related vulnerabilities on google and github and found one exploit.
 
 ![](./media/2.png)
 
