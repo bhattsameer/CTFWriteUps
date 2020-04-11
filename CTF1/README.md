@@ -28,3 +28,23 @@ In the next payload we are reading the file using **/home/nsctf/\_\_flag1\_\_** 
 ![](./media/5.png)
 
 
+## Challange 2:
+
+We need find a way to get access to nsctf user.
+
+![](./media/6.png)
+
+Previously we have observed that SSH was open, and as we able to read any system file of nsctf user, I tried to read **/home/nsctf/.ssh/id_rsa** and got nsctf user's ssh key.
+
+![](./media/7.png)
+
+Using which we able to do ssh to nsctf user and read **.\_\_flag2\_\_** file.
+
+*flag2 was: nsctf{4d9827f4f06f50d4618c6da61b68634c}*
+
+![](./media/8.png)
+![](./media/9.png)
+
+## Challange 3:
+
+
