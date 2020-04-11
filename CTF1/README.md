@@ -13,3 +13,18 @@ While Intercepting the request in burp and observing the request, I found XML da
 
 ![](./media/2.png)
 
+Using above script I have created one payload to read **/etc/passwd** and and used it inside the request parameter and :boom: we got content of /etc/passwd.
+
+![](./media/3.png)
+
+Observing the /etc/passwd I found there is one **nsctf** user, so next in the payload I have added **/home/nsctf** and observed that there is one file **__flag1__**.
+
+![](./media/4.png)
+
+In the next payload we are reading the file using **/home/nsctf/__flag1__** and :boom: we got our first flag.
+
+*flag was : nsctf{XX3_i5_aw3s0m3}*
+
+![](./media/5.png)
+
+
