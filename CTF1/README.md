@@ -17,11 +17,11 @@ Using above script I have created one payload to read **/etc/passwd** and and us
 
 ![](./media/3.png)
 
-Observing the /etc/passwd I found there is one **nsctf** user, so next in the payload I have added **/home/nsctf** and observed that there is one file **__flag1__**.
+Observing the /etc/passwd I found there is one **nsctf** user, so next in the payload I have added **/home/nsctf** and observed that there is one file **\_\_flag1\_\_**.
 
 ![](./media/4.png)
 
-In the next payload we are reading the file using **/home/nsctf/__flag1__** and :boom: we got our first flag.
+In the next payload we are reading the file using **/home/nsctf/\_\_flag1\_\_** and :boom: we got our first flag.
 
 *flag was : nsctf{XX3_i5_aw3s0m3}*
 
