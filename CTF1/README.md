@@ -1,12 +1,12 @@
-# CTF Title: NSCTFFEBW4
+## NSCTFFEBW4
 *Builder: Vitthal Shinde*</br>
 *Date: 28 Feb 2020*</br>
 *Tag: Misc*</br>
-*Alias name: Turing*</br>
+*My alias name: Turing*</br>
 *My score: 250*
 
 
-## Challange 1:
+### Challange 1:
 
 #### The name of the challange was **GEO**, One URL was provided and we need to find the flag.
 
@@ -31,9 +31,9 @@ In the next payload we are reading the file using **/home/nsctf/\_\_flag1\_\_** 
 ![](./media/5.png)
 
 
-## Challange 2:
+### Challange 2:
 
-### We need find a way to get access to nsctf user.
+#### can you to get access to nsctf user?.
 
 ![](./media/6.png)
 
@@ -48,9 +48,9 @@ Using which we able to do ssh to nsctf user and read **.\_\_flag2\_\_** file.
 ![](./media/8.png)
 ![](./media/9.png)
 
-## Challange 3:
+### Challange 3:
 
-### Can you become root?
+#### Can you become root?
 
 ![](./media/10.png)
 
