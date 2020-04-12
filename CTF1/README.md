@@ -68,7 +68,7 @@ and we read **.\_\_root\_flag\_\_** file.
 
 ![](./media/12.png)
 
-End Score team:
+End Score:
 
 ![](./media/14.png)
 
