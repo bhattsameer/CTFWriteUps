@@ -1,10 +1,14 @@
-
+# CTF Title: NSCTF FEB W4
+### Builder: Vitthal Shinde
+### Date: 28 Feb 2020
+### Tag: Misc
+### My score: 250
 
 CTF url is given, Let's see what is there\...
 
 ## Challange 1:
 
-The name of the challange was **GEO**, One URL was provided and we need to find the flag.
+### The name of the challange was **GEO**, One URL was provided and we need to find the flag.
 
 ![](./media/1.png)
 
@@ -29,7 +33,7 @@ In the next payload we are reading the file using **/home/nsctf/\_\_flag1\_\_** 
 
 ## Challange 2:
 
-We need find a way to get access to nsctf user.
+### We need find a way to get access to nsctf user.
 
 ![](./media/6.png)
 
@@ -46,7 +50,7 @@ Using which we able to do ssh to nsctf user and read **.\_\_flag2\_\_** file.
 
 ## Challange 3:
 
-Can you become root?
+### Can you become root?
 
 ![](./media/10.png)
 
@@ -64,3 +68,8 @@ and we read **.\_\_root\_flag\_\_** file.
 *flag was: nsctf{574ca321d4b0f3cca3d6763567095b17}*
 
 ![](./media/12.png)
+
+End Score team:
+
+![](./media/14.png)
+
