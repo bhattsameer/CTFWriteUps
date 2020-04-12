@@ -4,7 +4,6 @@
 *Tag: Misc*</br>
 *My score: 250*
 
-CTF url is given, Let's see what is there\...
 
 ## Challange 1:
 
