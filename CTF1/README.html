@@ -1,34 +1,34 @@
 <h2 id="nsctffebw4">NSCTFFEBW4</h2>
 <p><em>Builder: Vitthal Shinde</em></br><br /><em>Date: 28 Feb 2020</em></br><br /><em>Tag: Misc</em></br><br /><em>My alias name: Turing</em></br><br /><em>My score: 250</em></p>
 <h3 id="challange-1">Challange 1:</h3>
-<h4 id="the-name-of-the-challange-was-geo-one-url-was-provided-and-we-need-to-find-the-flag.">The name of the challange was <strong>GEO</strong>, One URL was provided and we need to find the flag.</h4>
-<p><img src="https://github.com/bhattsameer/CTFWriteUps/blob/master/CTF1/media/1.png" /></p>
+<h4 id="the-name-of-the-challange-was-geo-one-url-was-provided-and-we-need-to-find-the-flag.">The name of the challange was <strong>GEO</strong>, One URL was provided and we have to find the flag.</h4>
+<p><img src="https://raw.githubusercontent.com/bhattsameer/CTFWriteUps/master/CTF1/media/1.png" height="60%" width="60%"/></p>
 <p>While Intercepting the request in burp and observing the request, I found XML data passing inside one parameter. Also observed that it is <strong>geoserver</strong> so I searched for some geoserver related vulnerabilities on google and github and found one exploit.</p>
-<p><img src="./media/2.png" /></p>
+<p><img src="https://raw.githubusercontent.com/bhattsameer/CTFWriteUps/master/CTF1/media/2.png" height="60%" width="60%"/></p>
 <p>Using above script I have created one payload to read <strong>/etc/passwd</strong> and and used it inside the request parameter and :boom: we got content of /etc/passwd.</p>
-<p><img src="https://github.com/bhattsameer/CTFWriteUps/blob/master/CTF1/media/3.png" /></p>
+<p><img src="https://raw.githubusercontent.com/bhattsameer/CTFWriteUps/master/CTF1/media/3.png" height="60%" width="60%"/></p>
 <p>Observing the /etc/passwd I found there is one <strong>nsctf</strong> user, so next in the payload I have added <strong>/home/nsctf</strong> and observed that there is one file <strong>__flag1__</strong>.</p>
-<p><img src="https://github.com/bhattsameer/CTFWriteUps/blob/master/CTF1/media/4.png" /></p>
+<p><img src="https://raw.githubusercontent.com/bhattsameer/CTFWriteUps/master/CTF1/media/4.png" height="60%" width="60%"/></p>
 <p>In the next payload we are reading the file using <strong>/home/nsctf/__flag1__</strong> and :boom: we got our first flag.</p>
 <p><em>flag was : nsctf{XX3_i5_aw3s0m3}</em></p>
-<p><img src="https://github.com/bhattsameer/CTFWriteUps/blob/master/CTF1/media/5.png" /></p>
+<p><img src="https://raw.githubusercontent.com/bhattsameer/CTFWriteUps/master/CTF1/media/5.png" height="60%" width="60%"/></p>
 <h3 id="challange-2">Challange 2:</h3>
 <h4 id="can-you-to-get-access-to-nsctf-user.">can you to get access to nsctf user?.</h4>
-<p><img src="https://github.com/bhattsameer/CTFWriteUps/blob/master/CTF1/media/6.png" /></p>
+<p><img src="https://raw.githubusercontent.com/bhattsameer/CTFWriteUps/master/CTF1/media/6.png" height="60%" width="60%"/></p>
 <p>Previously we have observed that SSH was open, and as we able to read any system file of nsctf user, I tried to read <strong>/home/nsctf/.ssh/id_rsa</strong> and got nsctf user's ssh key.</p>
-<p><img src="https://github.com/bhattsameer/CTFWriteUps/blob/master/CTF1/media/7.png" /></p>
+<p><img src="https://raw.githubusercontent.com/bhattsameer/CTFWriteUps/master/CTF1/media/7.png" height="60%" width="60%"/></p>
 <p>Using which we able to do ssh to nsctf user and read <strong>.__flag2__</strong> file.</p>
 <p><em>flag2 was: nsctf{4d9827f4f06f50d4618c6da61b68634c}</em></p>
-<p><img src="https://github.com/bhattsameer/CTFWriteUps/blob/master/CTF1/media/8.png" /><br /><img src="./media/9.png" /></p>
+<p><img src="https://raw.githubusercontent.com/bhattsameer/CTFWriteUps/master/CTF1/media/8.png" height="60%" width="60%"/><br /><br /><img src="https://raw.githubusercontent.com/bhattsameer/CTFWriteUps/master/CTF1/media/9.png" /></p>
 <h3 id="challange-3">Challange 3:</h3>
 <h4 id="can-you-become-root">Can you become root?</h4>
-<p><img src="https://github.com/bhattsameer/CTFWriteUps/blob/master/CTF1/media/10.png" /></p>
+<p><img src="https://raw.githubusercontent.com/bhattsameer/CTFWriteUps/master/CTF1/media/10.png" height="60%" width="60%"/></p>
 <p>First step I done was running command <strong>sudo -l</strong> and observed that we can run zip command as a sudo. so tried below commands:</p>
 <pre><code> echo &quot;/bin/sh&quot; &gt; /tmp/win.sh
  sudo zip z.zip * -T -TT /tmp/win.sh </code></pre>
-<p><img src="https://github.com/bhattsameer/CTFWriteUps/blob/master/CTF1/media/11.png" /></p>
+<p><img src="https://raw.githubusercontent.com/bhattsameer/CTFWriteUps/master/CTF1/media/11.png"/></p>
 <p>and we read <strong>.__root_flag__</strong> file.</p>
 <p><em>flag was: nsctf{574ca321d4b0f3cca3d6763567095b17}</em></p>
-<p><img src="https://github.com/bhattsameer/CTFWriteUps/blob/master/CTF1/media/12.png" /></p>
+<p><img src="https://raw.githubusercontent.com/bhattsameer/CTFWriteUps/master/CTF1/media/12.png" height="60%" width="60%"/></p>
 <p>End Score:</p>
-<p><img src="https://github.com/bhattsameer/CTFWriteUps/blob/master/CTF1/media/14.png" /></p>
+<p><img src="https://raw.githubusercontent.com/bhattsameer/CTFWriteUps/master/CTF1/media/14.png" height="60%" width="60%"/></p>
