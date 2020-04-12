@@ -2,7 +2,7 @@
 *Builder: Vitthal Shinde*</br>
 *Date: 28 Feb 2020*</br>
 *Tag: Misc*</br>
-*Alias name: Turing*
+*Alias name: Turing*</br>
 *My score: 250*
 
 
