@@ -1,14 +1,14 @@
-# CTF Title: NSCTF FEB W4
-### Builder: Vitthal Shinde
-### Date: 28 Feb 2020
-### Tag: Misc
-### My score: 250
+# CTF Title: NSCTFFEBW4
+*Builder: Vitthal Shinde*
+*Date: 28 Feb 2020*
+*Tag: Misc*
+*My score: 250*
 
 CTF url is given, Let's see what is there\...
 
 ## Challange 1:
 
-### The name of the challange was **GEO**, One URL was provided and we need to find the flag.
+#### The name of the challange was **GEO**, One URL was provided and we need to find the flag.
 
 ![](./media/1.png)
 
